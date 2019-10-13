@@ -1,0 +1,19 @@
+\BOOKMARK [1][-]{section.1}{\277Qu\351 modos 01p11 y tipos 02p12 02p13 de \215virtualizaci\363n\216 existen?}{}% 1
+\BOOKMARK [1][-]{section.2}{Muestre los precios y caracter\355sticas de varios proveedores de VPS \(Virtual Private Server\) y compare con el precio de servidores dedicados \(administrados y no administrados\).03p21 03p22 03p23 03p24}{}% 2
+\BOOKMARK [1][-]{section.3}{\277Qu\351 otros software de virtualizaci\363n existen adem\341s de VMWare y Virtual Box? 04p31}{}% 3
+\BOOKMARK [1][-]{section.4}{Enumere algunas de las innovaciones en Windows 2012 R2 respecto a 2008R2 05p41}{}% 4
+\BOOKMARK [1][-]{section.5}{\277Que empresa hay detr\341s de Ubuntu? \277Qu\351 otros productos/servicios ofrece? \277Que es MAAS \(https://maas.ubuntu.com/\)? 06p51 06p52}{}% 5
+\BOOKMARK [1][-]{section.6}{\277Que relaci\363n tiene esta distribuci\363n con Red Hat y con el proyecto Fedora? 07p61}{}% 6
+\BOOKMARK [1][-]{section.7}{Indique que otros SO se utilizan y el porcentaje de uso \(no olvide poner la fuente de donde saca la informaci\363n y preste atenci\363n a la fecha de esta\) 08p71}{}% 7
+\BOOKMARK [1][-]{section.8}{a\)\277De que es el acr\363nimo RAID? b\)\277Que tipos de RAID hay? c\)\277Que diferencia hay entre RAID mediante SW y mediante HW? 09p81}{}% 8
+\BOOKMARK [1][-]{section.9}{a\)Que es LVM?,b\)\277Que ventaja tiene para un servidor de gama baja? c\)Si va a tener un servidor web, \277le daria un tamano grande o pequeno a /var? 10p91}{}% 9
+\BOOKMARK [1][-]{section.10}{\277Debemos cifrar tambi\351n el volumen que contiene el espacio para swap? \277y el volumen en el que montaremos /boot?}{}% 10
+\BOOKMARK [1][-]{section.11}{\277Que otro tipo de usos de una partici\363n le permite configurar el asistente de instalaci\363n?. \277Cual es la principal diferencia entre ext4 y ext2? 11p111}{}% 11
+\BOOKMARK [1][-]{section.12}{Muestre como ha quedado el disco particionado una vez el sistema est\341 instalado}{}% 12
+\BOOKMARK [1][-]{section.13}{a\)\277Como ha hecho el disco 2 \215arrancable\216?,b\)\277Que hace el comando grub-install? c\)\277Que hace el comando dd?}{}% 13
+\BOOKMARK [1][-]{section.14}{Cuesti\363n Opcional 1: Muestre \(con capturas de pantalla\) como ha comprobado que el RAID1 funciona}{}% 14
+\BOOKMARK [1][-]{section.15}{\277Que diferencia hay entre Standard y Datacenter? 12p141}{}% 15
+\BOOKMARK [1][-]{section.16}{Continue usted con el proceso de definici\363n de RAID1 para los dos discos de 50MiB que ha creado. Muestre el proceso con capturas de pantalla.}{}% 16
+\BOOKMARK [1][-]{section.17}{Con que opci\363n establecemos una red local con la maquina anfitriona?\277Con que opci\363n podemos compartir la conexi\363n a Internet?}{}% 17
+\BOOKMARK [1][-]{section.18}{Como podemos ver que ambas maquinas est\341n conectadas en la misma red local?\(Pistas: ping, ifconfig, ifdown, ifup\).Nota: al cambiar la configuraci\363n de VMSW hay que bajar y subir la interfaz de red para que la maquina virtual actualice sus par\341metros.\) Pruebe a ejecutar varias maquinas virtuales simult\341neamente y compruebe que pueden \215verse\216 entre ellas dentro de la misma red local.}{}% 18
+\BOOKMARK [1][-]{section.19}{Cuesti\363n opcional 2: \277Que relaci\363n hay entre los atajos de teclado de emacs y los de la consola bash?.\277y entre los de vi y las paginas del manual?}{}% 19

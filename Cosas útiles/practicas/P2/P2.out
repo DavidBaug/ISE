@@ -1,0 +1,25 @@
+\BOOKMARK [1][-]{section.1}{Liste los argumentos de yum necesarios para instalar, buscar y eliminar paquetes 01c01}{}% 1
+\BOOKMARK [1][-]{section.2}{2: \277Qu\351 ha de hacer para que yum pueda tener acceso a Internet?\(Pistas: archivo de configuraci\363n en /etc, proxy:stargate.ugr.es:3128\). \277C\363mo a\361adimos un nuevo repositorio? 02c01}{}% 2
+\BOOKMARK [1][-]{section.3}{Indique el comando para buscar un paquete en un repositorio y el correspondiente para instalarlo.}{}% 3
+\BOOKMARK [1][-]{section.4}{Indiqu\351 qu\351 ha modificado para que apt pueda acceder a los servidores de paquetes a trav\351s del proxy. \277C\363mo a\361adimos un nuevo repositorio? 04c01 04c02}{}% 4
+\BOOKMARK [1][-]{section.5}{Cuestion opcional 1 \277Que gestores utiliza OpenSuse?}{}% 5
+\BOOKMARK [1][-]{section.6}{\277Qu\351 diferencia hay entre telnet y ssh? 05c01}{}% 6
+\BOOKMARK [1][-]{section.7}{\277Para que sirve la opci\363n -X? Ejecute remotamente es decir desde la m\341quina anfitriona \(si tiene Linux\) o desde la otra m\341quina virtual el comando gedit en una sesi\363n abierta con ssh. \277Qu\351 ocurre? 06c01}{}% 7
+\BOOKMARK [1][-]{section.8}{Muestre la secuencia de comandos y las modificaciones a los archivos correspondientes para permitir acceder a la consola remota sin introducir la contrase\361a. \(Pistas: ssh-keygen, ssh-copy-id\) 07c01}{}% 8
+\BOOKMARK [1][-]{section.9}{\277Qu\351 archivo es el que contiene la configuraci\363n de sshd? \277Qu\351 par\341metro hay que modificar para evitar que el usuario root acceda? Cambie el puerto por defecto y compruebe que puede acceder 08c01}{}% 9
+\BOOKMARK [1][-]{section.10}{Indique si es necesario reiniciar el servicio \277C\363mo se reinicia un servicio en Ubuntu? \277y en CentOS? Muestre la secuencia de comandos para hacerlo. 09c01 09c02}{}% 10
+\BOOKMARK [1][-]{section.11}{Cuesti\363n opcional 2 : Instale y pruebe terminator. Con screen, pruebe su funcionamiento dejando sesiones ssh abiertas en el servidor y recuper\341ndolas posteriomente.}{}% 11
+\BOOKMARK [1][-]{section.12}{Cuesti\363n opcional 3 : Instale el servicio fail2ban y pruebe su funcionamiento.}{}% 12
+\BOOKMARK [1][-]{section.13}{Muestre los comandos que ha utilizado en Ubuntu Server y en CentOS \(aunque en este \372ltimo puede utilizar la GUI, en tal caso, realice capturas de pantalla\)}{}% 13
+\BOOKMARK [1][-]{section.14}{Enumere otros servidores web y las p\341ginas de sus proyectos \(m\355nimo 3 sin considerar Apache, IIS ni nginx\). 11cn01}{}% 14
+\BOOKMARK [1][-]{section.15}{\277C\363mo comprueba que funciona? Muestre una captura de pantalla. \(Pista: su m\341quina se denomina localhost\)}{}% 15
+\BOOKMARK [1][-]{section.16}{Realice la instalaci\363n de uno de estos dos \215web containers\216 y pruebe su ejecuci\363n.}{}% 16
+\BOOKMARK [1][-]{section.17}{Realice la instalaci\363n de MongoDB en alguna de sus m\341quinas virtuales. Cree una colecci\363n de documentos y haga una consulta sobre ellos.}{}% 17
+\BOOKMARK [1][-]{section.18}{Muestre un ejemplo de uso del comando.}{}% 18
+\BOOKMARK [1][-]{section.19}{Realice la instalaci\363n de esta aplicaci\363n y pruebe a modificar alg\372n par\341metro de alg\372n servicio. Muestre las capturas de pantalla pertinentes as\355 como el proceso de instalaci\363n. 15co01}{}% 19
+\BOOKMARK [1][-]{section.20}{Instale phpMyAdmin, indique c\363mo lo ha realizado y muestre algunas capturas de pantalla.Configure PHP para poder importar BDs mayores de 8MiB \(l\355mite por defecto\). Indique c\363mo ha realizado el proceso y muestre capturas de pantalla.}{}% 20
+\BOOKMARK [1][-]{section.21}{Visite al menos una de las webs de los software mencionados y pruebe las demos que ofrecen realizando capturas de pantalla y comentando qu\351 est\341 realizando.}{}% 21
+\BOOKMARK [1][-]{section.22}{Ejecute los ejemplos de find, grep y escriba el script que haga uso de sed para cambiar la configuraci\363n de ssh y reiniciar el servicio.}{}% 22
+\BOOKMARK [1][-]{section.23}{Muestre un ejemplo de uso para awk}{}% 23
+\BOOKMARK [1][-]{section.24}{Escriba el script para cambiar el acceso a ssh usando PHP o Python.}{}% 24
+\BOOKMARK [1][-]{section.25}{Abra una consola de Powershell y pruebe a parar un programa en ejecuci\363n \(p.ej\), realice capturas de pantalla y comente lo que muestra. 20co01}{}% 25

@@ -1,0 +1,10 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Instale la aplicaci\IeC {\'o}n Phoronix. \IeC {\textquestiondown }Qu\IeC {\'e} comando permite listar los benchmarks disponibles?}{4}{section.1}
+\contentsline {section}{\numberline {2}Seleccione, instale y ejecute uno, comente los resultados.}{6}{section.2}
+\contentsline {section}{\numberline {3}En Apache Benchmark, de los par\IeC {\'a}metros que le podemos pasar al comando \IeC {\textquestiondown }Qu\IeC {\'e} significa -c 30 ? \IeC {\textquestiondown }y -n 1000?}{8}{section.3}
+\contentsline {section}{\numberline {4}Ejecute ab contra a las tres m\IeC {\'a}quinas virtuales (desde el SO anfitri\IeC {\'o}n a las m\IeC {\'a}quina virtuales de la red local) una a una (arrancadas por separado) y muestre las estad\IeC {\'\i }sticas. \IeC {\textquestiondown }Cu\IeC {\'a}l es la que proporciona mejores resultados? F\IeC {\'\i }jese en el n\IeC {\'u}mero de bytes transferidos, \IeC {\textquestiondown }es igual para cada m\IeC {\'a}quina?}{9}{section.4}
+\contentsline {section}{\numberline {5}\IeC {\textquestiondown }Qu\IeC {\'e} es Scala? Instale Gatling y pruebe los escenarios por defecto. \cite {c02o}}{12}{section.5}
+\contentsline {section}{\numberline {6}Lea el art\IeC {\'\i }culo sobre Jmeter y elabore un breve resumen.}{12}{section.6}
+\contentsline {section}{\numberline {7}Instale y siga el tutorial en http://jmeter.apache.org/usermanual/build-web-test-plan.html realizando capturas de pantalla y coment\IeC {\'a}ndolas. En vez de usar la web de jmeter, haga el experimento usando alguna de sus m\IeC {\'a}quinas virtuales(Puede hacer una p\IeC {\'a}gina sencilla, usar las p\IeC {\'a}ginas de phpmyadmin, instalar un CMS, etc.).}{13}{section.7}
+\contentsline {section}{\numberline {8}Seleccione un benchmark entre SisoftSandra y Aida. Ejec\IeC {\'u}telo y muestre capturas de pantalla comentando los resultados.}{19}{section.8}
+\contentsline {section}{\numberline {9}Programe un benchmark usando el lenguaje que desee}{21}{section.9}

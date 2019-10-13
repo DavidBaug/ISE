@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{c01o}
+HowToForge.
+\newblock
+  \url{http://www.howtoforge.com/replacing\_hard\_disks\_in\_a\_raid1\_array}.
+
+\bibitem{c02}
+Debian.
+\newblock
+  \url{http://debian-handbook.info/browse/es-ES/stable/sect.task-scheduling-cron-atd.html}.
+
+\bibitem{c02o}
+Nagios.
+\newblock
+  \url{http://assets.nagios.com/downloads/nagioscore/docs/Installing\_Nagios\_Core\_From\_Source.pdf}.
+
+\bibitem{c04o}
+thedutchlab.com.
+\newblock
+  \url{https://thedutchlab.com/en/news/installing-zabbix-on-ubuntu-14-04}.
+
+\end{thebibliography}

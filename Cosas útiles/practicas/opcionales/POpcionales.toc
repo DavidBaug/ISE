@@ -1,0 +1,18 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Muestre (con capturas de pantalla) como ha comprobado que el RAID1 funciona}{5}{section.1}
+\contentsline {section}{\numberline {2}\IeC {\textquestiondown }Que relaci\IeC {\'o}n hay entre los atajos de teclado de emacs y los de la consola bash?.\IeC {\textquestiondown }y entre los de vi y las paginas del manual?}{5}{section.2}
+\contentsline {section}{\numberline {3}\IeC {\textquestiondown }Que gestores utiliza OpenSuse?}{5}{section.3}
+\contentsline {section}{\numberline {4}Instale y pruebe terminator. Con screen, pruebe su funcionamiento dejando sesiones ssh abiertas en el servidor y recuper\IeC {\'a}ndolas posteriomente.}{6}{section.4}
+\contentsline {section}{\numberline {5}Instale el servicio fail2ban y pruebe su funcionamiento.}{7}{section.5}
+\contentsline {section}{\numberline {6}Realice la instalaci\IeC {\'o}n de uno de estos dos \IeC {\textquotedblleft }web containers\IeC {\textquotedblright } y pruebe su ejecuci\IeC {\'o}n.}{8}{section.6}
+\contentsline {section}{\numberline {7}Realice la instalaci\IeC {\'o}n de MongoDB en alguna de sus m\IeC {\'a}quinas virtuales. Cree una colecci\IeC {\'o}n de documentos y haga una consulta sobre ellos.}{9}{section.7}
+\contentsline {section}{\numberline {8}Indique qu\IeC {\'e} comandos ha utilizado para realizarlo as\IeC {\'\i } como capturas de pantalla del proceso de reconstrucci\IeC {\'o}n del RAID. \cite {c07}}{10}{section.8}
+\contentsline {section}{\numberline {9}Instale Nagios en su sistema (el que prefiera) documentando el proceso y muestre el resultado de la monitorizaci\IeC {\'o}n de su sistema comentando qu\IeC {\'e} aparece. \cite {c08}}{11}{section.9}
+\contentsline {section}{\numberline {10}Con Ganglia haga lo mismo que con Munin.}{16}{section.10}
+\contentsline {section}{\numberline {11}Prueba a instalar este monitor es alguno de sus tres sistemas. Realice capturas de pantalla del proceso de instalaci\IeC {\'o}n y comente capturas de pantalla del programa en ejecuci\IeC {\'o}n.\cite {c09}}{16}{section.11}
+\contentsline {section}{\numberline {12}Pruebe a instalar este monitor en alguno de sus tres sistemas. Realice capturas de pantalla del proceso de instalaci\IeC {\'o}n y comente las capturas de pantalla del programa de ejecuci\IeC {\'o}n}{18}{section.12}
+\contentsline {section}{\numberline {13}Desarrolle una p\IeC {\'a}gina en C o C++ y analice su comportamiento usando valgrind.}{25}{section.13}
+\contentsline {section}{\numberline {14}Seleccione, instale y ejecute uno, comente los resultados.}{29}{section.14}
+\contentsline {section}{\numberline {15}\IeC {\textquestiondown }Qu\IeC {\'e} es Scala? Instale Gatling y pruebe los escenarios por defecto. \cite {c10}}{31}{section.15}
+\contentsline {section}{\numberline {16}Lea el art\IeC {\'\i }culo sobre Jmeter y elabore un breve resumen.}{32}{section.16}
+\contentsline {section}{\numberline {17}Seleccione un benchmark entre SisoftSandra y Aida. Ejec\IeC {\'u}telo y muestre capturas de pantalla comentando los resultados.}{32}{section.17}

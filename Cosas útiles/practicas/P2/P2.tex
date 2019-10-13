@@ -1,0 +1,557 @@
+\input{preambulo.tex}
+
+\usepackage[pdftex,colorlinks=true,linkcolor=negro,urlcolor=blue]{hyperref,xcolor}
+\definecolor{negro}{rgb}{0,0,0}
+
+\graphicspath{ {./imagenes/} }
+\usepackage{subfig}
+\hypersetup{citecolor=blue}
+
+\title{	
+\normalfont \normalsize 
+\textsc{{\bf Ingeniería de Servidores (2014-2015)} \\ Grado en Ingeniería Informática \\ Universidad de Granada} \\ [25pt]
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Memoria Práctica 1 \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Jose Antonio Jiménez Montañés}
+
+\date{\normalsize\today}
+
+%----------------------------------------------------------------------------------------
+% DOCUMENTO
+%----------------------------------------------------------------------------------------
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.5\textwidth]{gull}
+%	\caption{Texto Prueba}
+%	\label{fig:ddd}
+%\end{figure}
+
+
+%\cite{p1}
+
+\begin{document}
+
+\maketitle % Muestra el Título
+
+\newpage %inserta un salto de página
+
+\tableofcontents % para generar el índice de contenidos
+\clearpage
+\listoffigures
+
+%\listoftables 
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	Cuestion 1
+%----------------------------------------------------------------------------------------
+
+\section{Liste los argumentos de yum necesarios para instalar, buscar y eliminar paquetes \cite{01c01}}
+
+Instalar: yum install<paquete>
+Buscar:   yum search<paquete>
+Borrar :  yum remove<paquete>
+
+%------------------------------------------------
+% CUESTION 2
+%------------------------------------------------
+\section{2: ¿Qué ha de hacer para que yum pueda tener acceso a Internet?(Pistas: archivo de configuración en /etc, proxy:stargate.ugr.es:3128). ¿Cómo añadimos un nuevo repositorio? \cite{02c01}}
+
+a) Hay que configurar el archivo yum.conf situado en /etc y añadir al final de la sección del main la siguiente linea:\\
+\%proxy=http://<usuario>:<clave>@<ip\_servidor>:<puerto>\\
+
+
+b) Para añadir un nuevo repositorio escribimos la siguiente orden:\\
+\%su -c "yum-config-manager --add -repo=<repositorio>"\\
+
+
+%----------------------------------------------------------------------
+% CUESTION 3	
+%----------------------------------------------------------------------------------------
+
+\section{Indique el comando para buscar un paquete en un repositorio y el correspondiente para instalarlo.}
+
+Para buscar un paquete en un repositorio utilizamos apt-cache search <paquete>.
+
+Para instalar el paquete utilizamos apt-get install <paquete>.
+\clearpage
+%-------------------------------------------------------------------------------------------
+% CUESTION 4
+%--------------------------------------------------------------------------------------------
+\section{Indiqué qué ha modificado para que apt pueda acceder a los servidores de paquetes a través del proxy. ¿Cómo añadimos un nuevo repositorio? \cite{04c01} \cite{04c02}}
+
+Tenemos que modificar el archivo /etc/apt/apt.conf o crearlo en caso de no existir. En este archivo añadimos la direccion del proxy en el siguiente formato:\\
+
+Acquire::http::Proxy "http://yourproxyaddress:proxyport";\\
+
+o si nuestro proxy tiene restricciones de acceso ponemos:\\
+
+Acquire::http::Proxy "http://username:password@yourproxyaddress:proxyport";\\
+
+
+Para añadir un nuevo repositorio, editamos el fichero /etc/apt/sources.list y al final de dicho fichero añadimos el repositorio deseado asegurandose que pertenece a la distribución actual) y guardamos.\\
+
+Otra opción es usando Launchpad y con un simple comando nos agrega el repositorio: sudo add-apt-repository ppa:[nombre del repositorio] \\
+
+Posteriormente ejecutamos apt-get update para actualizar los repositorios. \\
+
+
+%----------------------------------------------------------------------------------------
+% CUESTION OPCIONAL 1
+%----------------------------------------------------------------------------------------
+\section{Cuestion opcional 1 ¿Que gestores utiliza OpenSuse?}
+
+De manera gráfica utiliza YaST, y para el modo consola utiliza Zypper.
+
+%----------------------------------------------------------------------------------------
+% CUESTION 5
+%----------------------------------------------------------------------------------------
+\section{¿Qué diferencia hay entre telnet y ssh? \cite{05c01}}
+
+
+La principal diferencia entre Telnet y SSH es la seguridad  ya que en telnet los datos se transmiten como cadenas de texto sin cifrar en cambio SSH utiliza técnicas de cifrado.
+
+\clearpage
+%----------------------------------------------------------------------------------------
+% CUESTION 6
+%----------------------------------------------------------------------------------------
+
+\section{¿Para que sirve la opción -X? Ejecute remotamente es decir  desde la máquina anfitriona (si tiene Linux) o desde la otra máquina virtual el comando gedit en una sesión abierta con ssh. ¿Qué ocurre? \cite{06c01}}
+
+
+Con la opción -X habilitamos el X11 forwarding que es el servidor gráfico, así podremos ejecutar una aplicación gráfica en servidor remoto.
+Al ejecutar gedit se abre una ventana gráfica, en la maquina virtual, del editor de texto.
+Hay sistemas que no permiten el lanzamiento directamente de aplicaciones gráficas por ssh aunque le incluyamos el parámetro -X, así que se puede hacer sin parámetros si exportamos la variable DISPLAY en 0:0 quedando://
+export DISPLAY=":0"\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{c06f01}
+	\caption{Error que da al lanzar una aplicacion grafica sin -x o con restricciones en el host}
+	\label{fig:c06f01}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{c06f02}
+	\caption{Aplicacion GEdit lanzada desde ssh sin -X pero exportando DISPLAY}
+	\label{fig:c06f02}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+% CUESTION 7
+%----------------------------------------------------------------------------------------
+\section{Muestre la secuencia de comandos y las modificaciones a los archivos correspondientes para permitir acceder a la consola remota sin introducir la contraseña. (Pistas: ssh-keygen, ssh-copy-id) \cite{07c01}}	
+
+Hay que configurar el fichero  /etc/ssh/sshd\_config, cambiando el valor del campo y descomentandolo: PasswordAuthentication a NO para indicar que no vamos a utilizar la autentificación basada en contraseñas.\\
+Luego reiniciamos el servicio: service sshd restart \\
+Para permitir el acceso sin contraseña tenemos que crear las claves en el host anfitrión con ssh-keygen, indicando el fichero donde las vamos a almacenar, aunque por defecto sera "~/.ssh/id"\\
+Después copiamos la clave publica al servidor con ssh-copy-id.\\
+Y por ultimo podemos acceder al servidor con la orden ssh <ip\_host>.
+
+%----------------------------------------------------------------------------------------
+% CUESTION 8
+%----------------------------------------------------------------------------------------
+\section{¿Qué archivo es el que contiene la configuración de sshd? ¿Qué parámetro hay que modificar para evitar que el usuario root acceda? Cambie el puerto por defecto y compruebe que puede acceder \cite{08c01}}
+
+
+a) El archivo que contiene la configuración de sshd es el "/etc/ssh/sshd\_config".\\
+b) El parámetro PermitRootLogin hay que ponerlo a valor NO, y reiniciar el servicio sshd con service sshd restart \\
+Si queremos restringir a más usuarios, se puede hacer añadiendo el parametro DenyUser y a continuación una lista de los usuarios que no queremos que accedan a dicha configuración.\\
+
+%----------------------------------------------------------------------------------------
+% CUESTION 9
+%----------------------------------------------------------------------------------------
+\section{Indique si es necesario reiniciar el servicio ¿Cómo se reinicia un servicio en Ubuntu? ¿y en CentOS? Muestre la secuencia de comandos para hacerlo. \cite{09c01} \cite{09c02}}
+
+Tenemos que reiniciar ssh cada vez que se produzca algún cambio en sus ficheros de configuración. \\
+En Ubuntu lo hacemos con los comandos: sudo service ssh restart y en CentOS con: service sshd restart 
+
+
+%----------------------------------------------------------------------------------------
+% CUESTION OPCIONAL 2
+%----------------------------------------------------------------------------------------
+\section{Cuestión opcional 2 : Instale y pruebe terminator. Con screen, pruebe su funcionamiento dejando sesiones ssh abiertas en el servidor y recuperándolas posteriomente.}
+
+Primero ya que estoy trabajando con Centos he tenido que descargar el rpm con terminator de: http://li.nux.ro/download/nux/dextop/el7/x86\_64/terminator-0.97-6.el7.nux.noarch.rpm \\
+
+Luego he instalado las 3 dependencias que son necesarias para instalar el rpm de terminator que son:\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{co02f01}
+	\caption{Dependencias faltantes para instalar rpm de terminator}
+	\label{fig:co06f01}
+\end{figure}
+
+Finalmente se instala el comando screen con: yum install screen. NOTA: Puede que se necesite tener los repositorios EPEL instalados. \cite{09o201} \\
+
+Ya se puede acceder desde la sesión SSH al comando screen para que nos virtualice una sesión de terminal que no se cerrara en caso de desconexión del túnel ssh. \\
+Si se desconecta se puede ver las sesiones virtuales abiertas con screen -ls y acceder a una de ellas usando su ID con screen -r <ID> \cite{09o202} \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{co02f02}
+	\caption{Uso del comando screen}
+	\label{fig:co06f02}
+\end{figure}
+
+
+
+%----------------------------------------------------------------------------------------
+% CUESTION OPCIONAL 3
+%----------------------------------------------------------------------------------------
+\section{Cuestión opcional 3 : Instale el servicio fail2ban y pruebe su funcionamiento.}
+
+
+Primero instalamos el paquete con yum install fail2ban \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{co03f01}
+	\caption{Instalación completada de fail2ban}
+	\label{fig:co06f02}
+\end{figure}
+
+Y activamos el servicio y comprobamos que esta ejecutandose: \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{co03f02}
+	\caption{Servicio fail2ban funcionando}
+	\label{fig:co06f02}
+\end{figure}
+
+
+Después solo tendremos que crear el archivo de configuración y configurarlo a nuestro gusto para restringir ciertas IPS, incluso con aviso por email en caso de intento no autorizado. \cite{09o301} \\
+
+
+
+\clearpage
+%----------------------------------------------------------------------------------------
+%CUESTION 10
+%----------------------------------------------------------------------------------------
+\section{Muestre los comandos que ha utilizado en Ubuntu Server y en CentOS (aunque en este último puede utilizar la GUI, en tal caso, realice capturas de pantalla)}
+
+En Ubuntu Server: Instalamos tasksel con apt-get si no lo tenemos y una vez instalado ejecutamos con sudo tasksel.
+
+Una vez que se haya iniciado tasksel, seleccionamos el paquete LAMP y pulsamos sobre OK para que de comienzo la instalación.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c10f01}
+	\caption{Menu seleccción de TaskSel}
+	\label{fig:c10f01}
+\end{figure}
+
+Para CentOS se puede usar yum para instalar httpd y MariaDB. El resultado es: \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c10f02}
+	\caption{Httpd instalado con yum}
+	\label{fig:c10f02}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c10f03}
+	\caption{Servicio httpd iniciado y comprobado}
+	\label{fig:c10f03}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c10f04}
+	\caption{MariaDB instalada}
+	\label{fig:c10f04}
+\end{figure}
+
+
+%----------------------------------------------------------------------------------------
+% CUESTION 11
+%----------------------------------------------------------------------------------------
+\section{Enumere otros servidores web y las páginas de sus proyectos (mínimo 3 sin considerar Apache, IIS ni nginx). \cite{11cn01}}
+
+Wakanda Server \url{http://www.wakanda.org/}\\
+NaviServer \url{http://wiki.tcl.tk/2090}\\
+Mongoose \url{http://cesanta.com/mongoose.shtml}
+
+
+%----------------------------------------------------------------------------------------
+% CUESTION 12
+%----------------------------------------------------------------------------------------
+\section{¿Cómo comprueba que funciona? Muestre una captura de pantalla. (Pista: su máquina se denomina localhost)}
+
+Después de realizar la instalación, desde el navegador web se accede al localhost.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c12f01}
+	\caption{Servidor web funcionando en CentOS}
+	\label{fig:c12f01}
+\end{figure}
+
+
+
+%----------------------------------------------------------------------------------------
+% CUESTION CUESTION OPCIONAL 4 %----------------------------------------------------------------------------------------
+\section{Realice la instalación de uno de estos dos “web containers” y pruebe su ejecución.}
+
+Primero instalamos Java
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{co04f01}
+	\caption{Instalación de Java completada}
+	\label{fig:co04f01}
+\end{figure}
+Luego TomCat 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{co04f02}
+	\caption{Instalación de TomCat completada}
+	\label{fig:co04f02}
+\end{figure}
+
+Luego configuramos Tomcat \cite{11co01} y probamos poniendo la ip local en el puerto 8080 en el navegador.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{co04f03}
+	\caption{Instalación de TomCat probada}
+	\label{fig:co04f03}
+\end{figure}
+
+
+%----------------------------------------------------------------------------------------
+% CUESTION OPCIONAL 5 %----------------------------------------------------------------------------------------
+\section{Realice la instalación de MongoDB en alguna de sus máquinas virtuales. Cree una colección de documentos y haga una consulta sobre ellos.}
+
+
+Primero instalamos MongoDB y lo configuramos: \cite{11co02} \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{co05f01}
+	\caption{Instalación de MongoDB completada}
+	\label{fig:co05f01}
+\end{figure}
+
+Y luego nos conectamos y creamos las colecciones de prueba: \cite{11co03} \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{co05f01}
+	\caption{Proceso de creación y consulta de la colección de datos}
+	\label{fig:co05f02}
+\end{figure}
+
+
+
+%----------------------------------------------------------------------------------------
+% CUESTION 14
+%----------------------------------------------------------------------------------------
+\section{Muestre un ejemplo de uso del comando.}
+
+patch parchea un fichero o directorio a partir de archivos .diff que marcan diferencias entre varios. 
+En vez de escribir el ejemplo completo he seguido paso a paso el siguiente desde este enlace y con él queda claro como funciona y para que sirve:\\ \url{http://redes-privadas-virtuales.blogspot.com.es/2010/01/creacion-y-aplicacion-de-parches-con.html}
+
+
+%---------------------------------------------------------------------------------------
+% CUESTION 15
+%----------------------------------------------------------------------------------------
+\section{Realice la instalación de esta aplicación y pruebe a modificar algún parámetro de algún servicio. Muestre las capturas de pantalla pertinentes así como el proceso de instalación. \cite{15co01}}
+
+Después de añadir los repositorios de Webmin se instala con yum \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c15f01}
+	\caption{Webmin instalado}
+	\label{fig:c15f01}
+\end{figure}
+
+
+
+Después configuramos puerto, levantamos servicio y comprobamos funcionamiento: \\
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{c15f02}
+	\caption{Panel principal de webmin}
+	\label{fig:c15f02}
+\end{figure}
+
+
+%---------------------------------------------------------------------------------------
+% CUESTION 16
+%----------------------------------------------------------------------------------------
+\section{Instale phpMyAdmin, indique cómo lo ha realizado y muestre algunas capturas de pantalla.Configure PHP para poder importar BDs mayores de 8MiB (límite por defecto). Indique cómo ha realizado el proceso y muestre capturas de pantalla.}
+
+
+Después de tener en el servidor instalado php5, apache y mariaDB he realizado un yum update y ademas: \\
+yum --enablerepo=remi,remi-php55 update \\
+yum --enablerepo=remi-php55 install php-gmp php-tidy php-recode php-bcmath \\
+
+Finalmente se podrá instalar phpmyadmin con: yum install phpmyadmin \\
+Se configura los permisos de acceso y accedemos desde navegador: \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{c16f01}
+	\caption{Login en phpmyadmin}
+	\label{fig:c16f01}
+\end{figure}
+
+Para que acepte importaciones mayores de 8MB editamos el archivo de configuracion: "/etc/php5/apache2/php.ini" y en la seccion de DATA\_HANDLING buscamos post\_max\_size y lo modificamos:\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c16f02}
+	\caption{Variable que controla el tamaño maximo de fichero para php}
+	\label{fig:c16f02}
+\end{figure}
+
+Finalmente reiniciamos el servicio.\\
+\clearpage
+%---------------------------------------------------------------------------------------
+% CUESTION 17
+%----------------------------------------------------------------------------------------
+\section{Visite al menos una de las webs de los software mencionados y pruebe las demos que ofrecen realizando capturas de pantalla y comentando qué está realizando.}
+
+
+DirectAdmin proporciona tres maneras de demo, para Usuario, para Revendedores y para Administradores. \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c17f00}
+	\caption{Tipos de demo en DirectAdmin}
+	\label{fig:c17f00}
+\end{figure}
+\clearpage
+En la demo de Administradores podemos ver algunas opciones ademas de un acceso WebMail y un Sistema de ficheros del servidor hosting. \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c17f01}
+	\caption{Login demo de Administrador}
+	\label{fig:c17f01}
+\end{figure}
+
+En las opciones principales tenemos 3 zonas que son: Administración de Servidor, Utilidades de Administración  y complementos extra.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c17f02}
+	\caption{Gestor de ficheros en DirectAdmin}
+	\label{fig:c17f02}
+\end{figure}
+
+Como utilidades de Administración destacamos un sistema de copias de seguridad y restauración:\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c17f03}
+	\caption{Gestor de copias de seguridad en DirectAdmin}
+	\label{fig:c17f03}
+\end{figure}
+
+
+Y como complementos extra destacamos un conjunto de estadísticas de uso en disco, y accesos a particiones.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c17f04}
+	\caption{Gestor de Estadísticas en DirectAdmin}
+	\label{fig:c17f04}
+\end{figure}
+
+%---------------------------------------------------------------------------------------
+% CUESTION 18
+%----------------------------------------------------------------------------------------
+\section{Ejecute los ejemplos de find, grep y escriba el script que haga uso de sed para cambiar la configuración de ssh y reiniciar el servicio.}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c18f01}
+	\caption{Script bash para el cambio de puerto ssh}
+	\label{fig:c18f01}
+\end{figure}
+
+
+%---------------------------------------------------------------------------------------
+% CUESTION OPCIONAL 6
+%----------------------------------------------------------------------------------------
+
+\section{Muestre un ejemplo de uso para awk}
+
+
+
+
+
+
+
+%---------------------------------------------------------------------------------------
+% CUESTION 19
+%----------------------------------------------------------------------------------------
+\section{Escriba el script para cambiar el acceso a ssh usando PHP o Python.}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c19f01}
+	\caption{Script PHP para el cambio de puerto ssh pasado vía WEB en modo GET o POST}
+	\label{fig:c19f01}
+\end{figure}
+
+
+
+
+\clearpage
+%---------------------------------------------------------------------------------------
+% CUESTION 20
+%----------------------------------------------------------------------------------------
+\section{Abra una consola de Powershell y pruebe a parar un programa en ejecución (p.ej), realice capturas de pantalla y comente lo que muestra. \cite{20co01}}
+
+Primero instalamos la consola ya que usamos W2008 R2\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c20f01}
+	\caption{Instalacion de PowerShell}
+	\label{fig:c20f01}
+\end{figure}
+
+Iniciamos PowerShell\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c20f02}
+	\caption{Consola PowerShell iniciada}
+	\label{fig:c20f02}
+\end{figure}
+
+Listamos todos los procesos:\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c20f03}
+	\caption{Listado de todos los procesos con PowerShell}
+	\label{fig:c20f03}
+\end{figure}
+
+
+Hemos abierto la calculadora, y ahora buscamos el proceso filtrando por la letra c:\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c20f04}
+	\caption{Listado con filtro de procesos con PowerShell}
+	\label{fig:c20f04}
+\end{figure}
+
+Ahora matamos el proceso proporcionándole su identificador:\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{c20f05}
+	\caption{Comprobación de la eliminación del proceso calc}
+	\label{fig:c20f05}
+\end{figure}
+
+
+\clearpage
+\bibliography{citas} %archivo citas.bib que contiene las entradas 
+\bibliographystyle{unsrt} % hay varias formas de citar
+
+
+\end{document}

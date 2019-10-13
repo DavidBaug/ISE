@@ -1,0 +1,40 @@
+\select@language {spanish}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Contenido de history.log\relax }}{5}{figure.caption.3}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Sistema detecta que el RAID falla\relax }}{6}{figure.caption.4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Sistema detecta nuevo disco en RAID y lo actualiza\relax }}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Configuracion del crontab para la tarea diaria.\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \IeC {\'U}ltimos registros Hardware del sistema(Antes de introducir USB).\relax }}{8}{figure.caption.7}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \IeC {\'U}ltimos registros Hardware del sistema(Despu\IeC {\'e}s de introducir USB).\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Esperando a que capture los datos para obtener los resultados.\relax }}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Resumen del contenido de datos regidos.\relax }}{9}{figure.caption.10}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Men\IeC {\'u} donde se recogen todos los datos almacenados por categor\IeC {\'\i }as.\relax }}{10}{figure.caption.11}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Iniciando un recopilador personal.\relax }}{11}{figure.caption.12}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Tipo de datos que vamos a incluir en el recopilador.\relax }}{12}{figure.caption.13}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Datos que vamos a incluir en el recopilador.\relax }}{13}{figure.caption.14}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Intervalo y confirmaci\IeC {\'o}n de datos a incluir.\relax }}{14}{figure.caption.15}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Fichero de salida de datos.\relax }}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Finalizaci\IeC {\'o}n de la configuraci\IeC {\'o}n manual del recopilador de datos.\relax }}{16}{figure.caption.17}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces xsensors ejecut\IeC {\'a}ndose junto con los comandos de opciones disponibles.\relax }}{17}{figure.caption.18}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces nmon ejecut\IeC {\'a}ndose\relax }}{18}{figure.caption.19}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Monitorizaci\IeC {\'o}n de memoria con nmon.\relax }}{18}{figure.caption.20}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Monitorizaci\IeC {\'o}n de las interfaces de red desde la webdemo\relax }}{19}{figure.caption.21}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Monitorizaci\IeC {\'o}n del uso de memoria desde la webdemo\relax }}{19}{figure.caption.22}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Prerequisitos de nagios con apt-get.\relax }}{20}{figure.caption.23}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Creacion de usuario y grupo Nagios.\relax }}{21}{figure.caption.24}
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Archivos de instalaci\IeC {\'o}n de Nagios descomprimidos.\relax }}{21}{figure.caption.25}
+\contentsline {figure}{\numberline {9.4}{\ignorespaces Preconfiguraci\IeC {\'o}n de Nagios completada.\relax }}{22}{figure.caption.26}
+\contentsline {figure}{\numberline {9.5}{\ignorespaces Instalacion de Nagios completada y servicio corriendo.\relax }}{23}{figure.caption.27}
+\contentsline {figure}{\numberline {9.6}{\ignorespaces Home Web de Nagios funcionando.\relax }}{24}{figure.caption.28}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Monitorizaci\IeC {\'o}n de servidor de pruebas con Munin\relax }}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Pantalla de login de Zabbix.\relax }}{25}{figure.caption.30}
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Pantalla Principal de Zabbix.\relax }}{26}{figure.caption.31}
+\contentsline {figure}{\numberline {12.1}{\ignorespaces Pantalla inicial de preinstalaci\IeC {\'o}n de Cacti.\relax }}{27}{figure.caption.32}
+\contentsline {figure}{\numberline {12.2}{\ignorespaces Opci\IeC {\'o}n de nueva instalaci\IeC {\'o}n o actualizaci\IeC {\'o}n.\relax }}{28}{figure.caption.33}
+\contentsline {figure}{\numberline {12.3}{\ignorespaces Comprobaci\IeC {\'o}n de rutas en la instalaci\IeC {\'o}n de cacti.\relax }}{29}{figure.caption.34}
+\contentsline {figure}{\numberline {12.4}{\ignorespaces Login en cacti.\relax }}{30}{figure.caption.35}
+\contentsline {figure}{\numberline {12.5}{\ignorespaces Cambio de password para admin en cacti.\relax }}{31}{figure.caption.36}
+\contentsline {figure}{\numberline {12.6}{\ignorespaces Home de cacti.\relax }}{32}{figure.caption.37}
+\contentsline {figure}{\numberline {12.7}{\ignorespaces Gr\IeC {\'a}ficas de muestreo en cacti.\relax }}{33}{figure.caption.38}
+\contentsline {figure}{\numberline {14.1}{\ignorespaces Resultado en consola de valgring sobre un programa de multiplicaci\IeC {\'o}n de matrices.\relax }}{37}{figure.caption.39}
+\contentsline {figure}{\numberline {15.1}{\ignorespaces Resultado de la consulta en tabla y el tiempo que a tardado en realizarla.\relax }}{38}{figure.caption.40}
+\contentsline {figure}{\numberline {15.2}{\ignorespaces Resultado de la consulta en formato gr\IeC {\'a}fico.\relax }}{39}{figure.caption.41}

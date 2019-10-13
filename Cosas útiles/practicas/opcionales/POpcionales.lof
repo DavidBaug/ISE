@@ -1,0 +1,39 @@
+\select@language {spanish}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Comprobaci\IeC {\'o}n del estado del RAID1\relax }}{5}{figure.caption.3}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Dependencias faltantes para instalar rpm de terminator\relax }}{6}{figure.caption.4}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Uso del comando screen\relax }}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Instalaci\IeC {\'o}n completada de fail2ban\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Servicio fail2ban funcionando\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Instalaci\IeC {\'o}n de Java completada\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Instalaci\IeC {\'o}n de TomCat completada\relax }}{8}{figure.caption.9}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Instalaci\IeC {\'o}n de TomCat probada\relax }}{8}{figure.caption.10}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Instalaci\IeC {\'o}n de MongoDB completada\relax }}{9}{figure.caption.11}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Proceso de creaci\IeC {\'o}n y consulta de la colecci\IeC {\'o}n de datos\relax }}{9}{figure.caption.12}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Sistema detecta que el RAID falla\relax }}{10}{figure.caption.13}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Sistema detecta nuevo disco en RAID y lo actualiza\relax }}{10}{figure.caption.14}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Prerequisitos de nagios con apt-get.\relax }}{11}{figure.caption.15}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Creacion de usuario y grupo Nagios.\relax }}{12}{figure.caption.16}
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Archivos de instalaci\IeC {\'o}n de Nagios descomprimidos.\relax }}{12}{figure.caption.17}
+\contentsline {figure}{\numberline {9.4}{\ignorespaces Preconfiguraci\IeC {\'o}n de Nagios completada.\relax }}{13}{figure.caption.18}
+\contentsline {figure}{\numberline {9.5}{\ignorespaces Instalacion de Nagios completada y servicio corriendo.\relax }}{14}{figure.caption.19}
+\contentsline {figure}{\numberline {9.6}{\ignorespaces Home Web de Nagios funcionando.\relax }}{15}{figure.caption.20}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Monitorizaci\IeC {\'o}n de servidor de pruebas con Munin\relax }}{16}{figure.caption.21}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Pantalla de login de Zabbix.\relax }}{16}{figure.caption.22}
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Pantalla Principal de Zabbix.\relax }}{17}{figure.caption.23}
+\contentsline {figure}{\numberline {12.1}{\ignorespaces Pantalla inicial de preinstalaci\IeC {\'o}n de Cacti.\relax }}{18}{figure.caption.24}
+\contentsline {figure}{\numberline {12.2}{\ignorespaces Opci\IeC {\'o}n de nueva instalaci\IeC {\'o}n o actualizaci\IeC {\'o}n.\relax }}{19}{figure.caption.25}
+\contentsline {figure}{\numberline {12.3}{\ignorespaces Comprobaci\IeC {\'o}n de rutas en la instalaci\IeC {\'o}n de cacti.\relax }}{20}{figure.caption.26}
+\contentsline {figure}{\numberline {12.4}{\ignorespaces Login en cacti.\relax }}{21}{figure.caption.27}
+\contentsline {figure}{\numberline {12.5}{\ignorespaces Cambio de password para admin en cacti.\relax }}{22}{figure.caption.28}
+\contentsline {figure}{\numberline {12.6}{\ignorespaces Home de cacti.\relax }}{23}{figure.caption.29}
+\contentsline {figure}{\numberline {12.7}{\ignorespaces Gr\IeC {\'a}ficas de muestreo en cacti.\relax }}{24}{figure.caption.30}
+\contentsline {figure}{\numberline {13.1}{\ignorespaces Resultado en consola de valgring sobre un programa de multiplicaci\IeC {\'o}n de matrices.\relax }}{28}{figure.caption.31}
+\contentsline {figure}{\numberline {14.1}{\ignorespaces Instalacion del benchmark hdparm-read\relax }}{29}{figure.caption.32}
+\contentsline {figure}{\numberline {14.2}{\ignorespaces Ejecuci\IeC {\'o}n del benchmark hdparm-read\relax }}{29}{figure.caption.33}
+\contentsline {figure}{\numberline {14.3}{\ignorespaces Resumen de nuestro sistema y confirmaci\IeC {\'o}n de guardado de datos.\relax }}{30}{figure.caption.34}
+\contentsline {figure}{\numberline {14.4}{\ignorespaces Realizaci\IeC {\'o}n de los test de disco.\relax }}{30}{figure.caption.35}
+\contentsline {figure}{\numberline {14.5}{\ignorespaces Resultado del benchmark hdparm-read.\relax }}{31}{figure.caption.36}
+\contentsline {figure}{\numberline {14.6}{\ignorespaces Resultado del benchmark hdparm-read en gr\IeC {\'a}fica.\relax }}{31}{figure.caption.37}
+\contentsline {figure}{\numberline {17.1}{\ignorespaces Pantalla inicial de SisoftSandra.\relax }}{32}{figure.caption.38}
+\contentsline {figure}{\numberline {17.2}{\ignorespaces Diversos test de SisoftSandra.\relax }}{33}{figure.caption.39}
+\contentsline {figure}{\numberline {17.3}{\ignorespaces Resultado de testear la CPU con SiSoftSandra.\relax }}{33}{figure.caption.40}

@@ -1,0 +1,9 @@
+\BOOKMARK [1][-]{section.1}{Al modificar los valores del kernel de este modo, no logramos que persistan despu\351s de reiniciar la m\341quina. \277Qu\351 archivo hay que editar para que los cambios sean permanentes?}{}% 1
+\BOOKMARK [1][-]{section.2}{Con qu\351 opci\363n se muestran todos los par\341metros modificables en tiempo de ejecuci\363n? Elija dos par\341metros y explique, en dos l\355neas, qu\351 funci\363n tienen.}{}% 2
+\BOOKMARK [1][-]{section.3}{Realice una copia de seguridad del registro y rest\341urela, ilustre el proceso con capturas.}{}% 3
+\BOOKMARK [1][-]{section.4}{\277C\363mo se abre una consola en Windows? \277Qu\351 comando hay que ejecutar para editar el registro? Muestre su ejecuci\363n con capturas de pantalla}{}% 4
+\BOOKMARK [1][-]{section.5}{Las cadenas de caracteres y valores num\351ricos tienen distintos tipos. Busque en la documentaci\363n de Microsoft y liste todos los tipos de valores. c05c01}{}% 5
+\BOOKMARK [1][-]{section.6}{Enumere qu\351 elementos se pueden configurar en Apache y en IIS para que Moodle funcione mejor. c06c01}{}% 6
+\BOOKMARK [1][-]{section.7}{Ajuste la compresi\363n en el servidor y analice su comportamiento usando varios valores para el tama\361o a de archivo partir del cual comprimir. Para comprobar que est\341 comprimiendo puede usar el navegador o comandos como curl \(see url\) o lynx. Muestre capturas de pantalla de todo el proceso.}{}% 7
+\BOOKMARK [1][-]{section.8}{Al igual que ha visto c\363mo se puede mejorar un servidor web \(Pr\341ctica 5 Secci\363n 3.1\), elija un servicio \(el que usted quiera\) y modifique un par\341metro para mejorar su comportamiento. \(9.b\) Monitorice el servicio antes y despu\351s de la modificaci\363n del par\341metro aplicando cargas al sistema \(antes y despu\351s\) mostrando los resultados de la monitorizaci\363n.}{}% 8
+\BOOKMARK [1][-]{section.9}{Instalaci\363n y configuraci\363n de un sistema KDC en Centos 6.5.}{}% 9

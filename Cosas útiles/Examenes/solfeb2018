@@ -1,0 +1,78 @@
+1.-
+a) F (es el nuevo tiempo de servicio el que será menor)
+b) F (eso debe aparecer en el pliego de cláusulas administrativas particulares)
+c) V
+d) F (se llama SAS)
+e) F (sería, en todo caso, de alta disponibilidad)
+f) V
+g) V
+h) F (convierte corriente alterna en corriente continua)
+i) F (la expresión válida más parecida sería Nz=X0*Z)
+j) V
+
+2.- La hipótesis de partida del test ANOVA (también llamada hipótesis nula o H0) es que el factor a considerar (en este caso, el S.O.) no influye significativamente sobre la variable repuesta (en este caso, el número medio de páginas servidas por segundo).
+El p-value es la probabilidad de que dicha hipótesis sea cierta. En nuestro caso, es el valor de la columna "Sig." que es 0,999.
+A un nivel de confianza del 95% el grado de significatividad, alfa, es 0,05.
+Como el p-value = 0,999 es mayor que el grado de significatividad, concluimos que la probabilidad de que la hipótesis nula sea cierta es alta (en este caso es altísima) por lo que NO la podemos descartar. En otras palabras, el factor S.O. NO influye en el número medio de páginas servidas por segundo para un 95% del nivel de confianza.
+
+3.-
+a) Intel Xeon. AMD Opteron.
+b) y c) Ver, por ejemplo, diapositiva 8 del tema 2.
+d) De la memoria ROM.
+e) Significa que puede enviar y recibir datos de forma SIMULTÁNEA. Notad que half-duplex también puede enviar y recibir datos, pero no de forma simultánea.
+f) Códigos CPV (Common Procurement Vocabulary). Sirven para clasificar todas las actividades económicas susceptibles de ser contratadas mediante licitación pública en la Unión Europea. Estos códigos facilitan que una empresa pueda rápidamente saber si una determinada oferta pública está relacionada o no con la actividad que realiza dicha empresa.
+g) En la normativa se indica que no harán referencia a una fabricación o una procedencia determinada con la finalidad de favorecer o descartar ciertas empresas o ciertos productos. Si no es posible, se acompañará la mención «o equivalente».
+h) En un protocolo paralelo, al enviarse la información a través de varias líneas a lo largo de la placa, no todas ellas recorren la misma distancia hasta llegar al destino por lo que no todas las señales llegan a la vez. Eso dificulta poder subir la frecuencia de la señal de reloj ya que debemos esperar a que todas las señales lleguen al destino antes de leer la palabra completa ("timing skew").
+i) De cada 10 bits que se envían en serie, 8 son de datos y 2 de redundancia para poder mejorar la fiabilidad de la transmisión.
+j) El programa sar es un monitor de ACTIVIDAD a nivel de SISTEMA para Linux. Nos  puede mostrar tanto información recopilada con anterioridad como de forma interactiva sobre la actividad de los principales recursos del sistema: CPU, memoria, almacenamiento y red. Sin parámetros me da la información recopilada del día de hoy sobre la utilización unificada de los núcleos (cores) de los procesadores.
+k) Diapositiva 13 del tema 3.
+l) Diapositiva 25 del tema1.
+m) Hay muchas respuestas válidas. Por ejemplo:
+Placa base de servidor: más zócalos para CPU, más ranuras para DRAM, más conectores para almacenamiento (SATA o SAS), panel trasero con más conectores de red, panel trasero con VGA básico (mientras que PC con conectores de audio y vídeo de mayores prestaciones).
+
+4.- De los 150s que tarda el programa:
+0,35*150=52,5s se emplean ejecutando instrucciones de tratamiento de cadenas por parte del procesador.
+0,65*150=97,5s se invierten accediendo al subsistema de discos
+Tras ambas mejoras:
+Ahora solamente se emplean 52,5/2=26,25s ejecutando instrucciones de tratamiento de cadenas por parte del procesador (es el doble de rápido).
+97,5/k serán los segundos que se invierten accediendo al subsistema de discos, siendo k el número de veces que es más rápido el nuevo subsistema de discos con respecto al anterior.
+El tiempo de ejecución con ambas mejoras me dicen que es 103s = 26,25+97,5/k. De donde k= 1,27. Por tanto, el nuevo subsistema de discos es 1,27 veces "más rápido" que el anterior o, lo que es lo mismo, (1,27-1)*100=27% más rápido.
+
+Otra forma: Aplico la generalización de la ley de Amdahl (diapositiva 42 del tema 1):
+S=To/Tm=105/103=1/(0,35/2+0,65/k) --> k=0,65/(103/150-0,35/2)=1,27.
+
+5.- En el enunciado me dan:
+T=48h = 172800s
+A0=250000 tr.
+Bcpu=T-900*60s=118800s
+Ccpu=750000 tr.
+Udd=0,85
+Vdd=12
+
+a) Vcpu=Ccpu/C0.
+Debemos comprobar (NO basta con suponer) que el servidor no está saturado para poder identificar C0 con A0.
+Para ello, lo más fácil es calcular la utilización de la CPU (ya que el disco duro sabemos que no está saturado por tener utilización <1).
+Ucpu=Bcpu/T=118800/172800=0,69 (69%) < 1 (también habría bastado razonar que Ucpu < 1 sabiendo que ha estado ocioso un tiempo).
+Por tanto, ninguno de los dispositivos considerados en nuestro modelo está saturado por lo que el servidor tampoco lo estará --> C0=A0=250000 tr.
+Vcpu=Ccpu/C0=750000/250000=3.
+
+b) Nos piden Sdd.
+Sdd=Bdd/Cdd
+Sabemos que Vdd=Cdd/C0 --> Cdd=C0*Vdd=3000000 tr.
+Sabemos que Udd=Bdd/T --> Bdd=Udd*T=146880 s
+Por tanto, Sdd= 146880/3000000 = 0,049s
+
+c) Udd>Ucpu --> El disco duro es el cuello de botella.
+X0max=1/Db=1/Ddd
+Ddd=Vdd*Sdd=12*0,049=0,59s
+--> X0max=1/0,59 = 1,7 tr/s
+Por tanto, hará falta superar 1,7 consultas por segundo, de media, para saturar el servidor.
+
+6.- a) A partir de la gráfica, es fácil deducir:
+X0max=5tr/s =1/Db=1/Ddd --> Ddd=0,2s.
+R0min=0,33s = Ddd+Dcpu --> Dcpu=0,33-0,2 = 0,13s.
+Dcpu=Bcpu/C0=Ucpu/X0. Despejo X0: X0=Ucpu/Dcpu= 0,39/0,13 = 3tr/s.
+b)
+Debemos calcular el "punto teórico de saturación" o "knee point" NT* que se define como el valor de NT en donde las asíntotas se unen. Por ejemplo, fijándonos en la gráfica de la derecha (haciéndolo con la de la izquierda el resultado será el mismo) tenemos:
+NT*/4,33=5 --> NT*=21,65 usuarios. Por lo tanto, el número total "ideal" de usuarios en la red cerrada serían 21-22 usuarios (debe notarse que al ser un valor total y no un valor medio, éste valor debería reflejar un número entero de usuarios).
+Nota: como ya comenté en clase, si se usan las ecuaciones de las asíntotas se deben demostrar o, al menos, razonar de dónde salen. 

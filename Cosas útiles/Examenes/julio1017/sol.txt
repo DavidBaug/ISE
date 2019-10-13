@@ -1,0 +1,63 @@
+1.- Pregunta de teoría. Posibles soluciones: véase transparencia 8 del tema 2. Poner tres ejemplos pertenecientes al mismo punto de dicha transparencia no se consideran ejemplos diferentes. Hay una diferencia entre qué información puede obtener un monitor y la utilidad de dicha información (=para qué sirve esa información), que es lo que se pide aquí.
+
+2.- Ejercicio prácticamente idéntico al ejercicio 1.2 de la relación. Basta aplicar la ley de Amdahl (o usar razonamientos lógicos). Solución: 20 segundos.
+
+3.-
+Tabla solución (en formato texto):
+
+56,25   27      27      3       9       14      reduce
+31,25   42      15      6       2,5     2,5     invierte
+12,5    48      6       4       1,5     1,5     calcula
+
+a) 48s
+b) Este profiler obtiene la información mediante muestreo. Existe un temporizador de profiling (proporcionado por el S.O.) que interrumpe el programa cada cierto tiempo de ejecución de CPU del mismo para ver en qué función se encuentra en ese momento. En ese caso, se hace cada 0,01 segundos.
+c) 14s.
+9 (self) + 2*2,5 (invierte) = 14s, ya que de media, cada llamada a reduce hace dos llamadas a invierte.
+
+4.- F V F F F
+
+5.-  a) La máquina A es un 6,3% más rápida que la máquina B según el tiempo total de ejecución.
+b) SPEC_A=5,2; SPEC_B=4,84; Según ese índice, la máquina más rápida es la A. No indicar que, según el criterio de SPEC, una máquina es mejor al tener un SPEC mayor se considera un error conceptual grave y la pregunta está mal.
+
+6.- Habría que demostrar que de Ui=Xi*Si podemos inferir Ui=X0*Di (transparencia 35 del tema 4) y, de ahí, razonar igual que se hace en la transparencia 43 (o la 47 o la 51) para obtener que X0max=1/Db.
+
+7.- Lo más fácil para hacer el ejercicio es sacar una nueva columna con las razones de visita. Esto se puede hacer fácilmente usando la ley del flujo forzado (y suponiendo que el servidor no está saturado, cosa que tendremos que demostrar en el apartado b).
+Disp.   Si(s)   Xi(s)   Vi
+DiscoA  0,01    4       16
+DiscoB  0,04    8       32
+CPU     0,02    13      52
+
+A partir de ahí, todo se hace de forma idéntica a como se indica en el ejercicio de las transparencias 70  y 71 del tema 4.
+
+Disp.   Si(s)   Xi(s)   Vi      Di(s)   Ui
+DiscoA  0,01    4       16      0,16    0,04
+DiscoB  0,04    8       32      1,28    0,32
+CPU     0,02    13      52      1,04    0,26
+
+a) El cuello de botella es el DiscoB
+b) X0max=1/Db=0,78 tr/s < 0,25 tr/s --> no está saturado (--> la identificación de X0=lambda0 que hemos hecho al principio para calcular Vi es correcta). También podemos razonarlo diciendo que la utilización del cuello de botella es 0,32 <1.
+c)
+Alternativa 1: Transparencia 67 del tema 4. A partir de Wi=Ni*Si DEBEMOS DEMOSTRAR que Ri=Si/(1-Ui). De ahí deducimos que R_DiscoB=0,059s. Finalmente:
+Q_DiscoB=lambda_DiscoB*W_DiscoB= X_DiscoB*W_DiscoB=0,151 trabajos.
+Alternativa 2: Qi=Xi*Wi (ley Little aplicada a la cola de una estación de servicio)=Xi*Ni*Si (por el enunciado)=Xi*(Qi+Ui)*Si (definición de Ni). Y de ahí despejamos Qi (todo lo demás lo conocemos).
+
+8.-
+Datos que nos proporcionan en el enunciado. No ser capaz de identificar estas variables a partir del enunciado se considera un error conceptual grave y la pregunta entera estará mal.
+T=48h=172800s
+A0=17000 tr=C0 (por no estar saturado)
+Bcpu=700min=42000s
+Ccpu=45000 tr
+Cdisco=125000tr
+Udisco=0,8
+
+a)
+Vdisco=7,35 (es un valor medio por lo que no tiene por qué ser un número entero).
+Sdisco=1,11s
+
+b)
+Xcpu=0,26tr/s
+Ucpu=0,24 (24%)
+
+c)
+X0max=0,12 tr/s
+R0min=10,6s

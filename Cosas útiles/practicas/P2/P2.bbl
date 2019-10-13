@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{01c01}
+Centos.
+\newblock
+  \url{https://www.centos.org/docs/5/html/5.2/Deployment_Guide/s1-yum-useful-commands.html}.
+
+\bibitem{02c01}
+Centos.
+\newblock
+  \url{https://www.centos.org/docs/5/html/yum/sn-yum-proxy-server.html}.
+
+\bibitem{04c01}
+Ubuntu.
+\newblock
+  \url{http://www.guia-ubuntu.com/index.php/Añadir\_repositorios\_externos}.
+
+\bibitem{04c02}
+Ubuntu.
+\newblock \url{http://askubuntu.com/questions/257290/configure-proxy-for-apt}.
+
+\bibitem{05c01}
+Fedora.
+\newblock
+  \url{http://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.2/html/OpenSSH_Guide/sect-OpenSSH\_Guide-Security-OpenSSH\_In\_Action.html}.
+
+\bibitem{06c01}
+Universidad de~Zaragoza.
+\newblock \url{http://webdiis.unizar.es/~spd/sec/X11.txt}.
+
+\bibitem{07c01}
+Debian.
+\newblock
+  \url{https://www.debian-administration.org/article/152/Password-less\_logins\_with\_OpenSSH}.
+
+\bibitem{08c01}
+RedHat.
+\newblock
+  \url{https://access.redhat.com/documentation/en-US/Red\_Hat\_Enterprise\_Linux/6/html/V2V\_Guide/Preperation\_Before\_the\_P2V\_Migration-Enable\_Root\_Login\_over\_SSH.html}.
+
+\bibitem{09c01}
+Ubuntu.
+\newblock \url{https://help.ubuntu.com/community/SSH/OpenSSH/Configuring}.
+
+\bibitem{09c02}
+RedHat.
+\newblock
+  \url{https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s2-ssh-configuration-sshd.html}.
+
+\bibitem{15co01}
+Lintut.
+\newblock \url{http://lintut.com/how-to-install-webmin-on-centos-7/}.
+
+\bibitem{20co01}
+Microsoft.
+\newblock \url{http://technet.microsoft.com/es-es/library/dd347650.aspx}.
+
+\bibitem{09o201}
+Tecmint.
+\newblock
+  \url{http://www.tecmint.com/how-to-enable-epel-repository-for-rhel-centos-6-5/}.
+
+\bibitem{09o202}
+Ejecutivo~Soporte XpressHosting.
+\newblock
+  \url{http://blog.xpress.com.mx/2011/12/¿que-es-el-comando-screen-y-como-utilizarlo/}.
+
+\bibitem{09o301}
+Ubuntu.
+\newblock \url{https://help.ubuntu.com/community/Fail2ban}.
+
+\bibitem{11cn01}
+Wikipedia.
+\newblock
+  \url{http://en.wikipedia.org/wiki/Comparison\_of\_web\_server\_software}.
+
+\bibitem{11co01}
+HowToForge.
+\newblock \url{http://www.howtoforge.com/how-to-install-tomcat-on-centos-7}.
+
+\bibitem{11co02}
+MongoDB.
+\newblock
+  \url{http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fedora-linux/}.
+
+\bibitem{11co03}
+MongoDB.
+\newblock \url{http://docs.mongodb.org/manual/tutorial/getting-started/}.
+
+\end{thebibliography}

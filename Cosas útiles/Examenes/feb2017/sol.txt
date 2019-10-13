@@ -1,0 +1,137 @@
+1.- (problema mezcla entre el 1.8 de la relación y el que hicimos en clase)
+To=280s
+55% de To = 154s se consume accediendo a los discos
+Resto, 126s usando instrucciones de la CPU.
+La frecuencia de la CPU mejorada es 3/2 = 1,5 veces la antigua por lo que la parte que depende solo de la CPU ejecutará su parte un 50% más rápido —> 126/1,5 = 84s.
+La parte de discos es un 30% más rápida —> 1,3 veces “más rápida” —> nuevo tiempo de ejecución de la parte de discos será 154/1,3 = 118,46s (que no es lo mismo que poner 154*0,7 = 107,8s). A esa parte no le afecta el cambio en frecuencia de la CPU ya que solo depende de cómo de rápido sea el disco en responder.
+Por tanto, nuevo tiempo de ejecución del programa completo = 84+118,46=202,46s.
+El speedup será 280/202,46=1,38 y el tanto por ciento de mejora será 38%.
+
+2.-
+0.015=sobrecarga_cpu = 0,15s/Tmuestreo  —> Tmuestreo= 10s. Debe activarse cada 10s.
+sobrecarga_memoria (%) = 100*120KiB/1GiB = 100*120KiB/(1024*1024 KiB) = 0,0114%
+
+3.- En un caso (base) se utilizan los mismos parámetros de compilación para todos los programas mientras que en el segundo se pueden particularizar para optimizar cada programa por separado. Por tanto, al comparar ambos índices realmente estamos viendo cuál es el rendimiento que nos proporciona el compilador.
+
+4.-
+a) Para muchos lenguajes, entre ellos, C y C++. Como mínimo, se debe contestar “el lenguaje C” que es el que hemos visto en clase (con decir C sería suficiente para considerar la respuesta válida).
+b) Mediante muestreo. Existe un temporizador de profiling (proporcionado por el S.O.) que interrumpe el programa cada cierto tiempo de ejecución de CPU del mismo para ver en qué función se encuentra en ese momento. Por lo tanto, no son valores exactos sino estimados.
+
+5.- Respuesta libre. Ver transparencias de clase sobre ANOVA. Lo que sí debe quedar claro es que la hipótesis de partida es que el factor a considerar (por ejemplo, el tipo de disco duro) no influye en la variable respuesta (o variable dependiente o métrica). Si no se indica eso la respuesta no puede estar correcta.
+
+6.- V F F V F
+En Linux, la carga del sistema (system load) hace referencia al número de procesos en la cola de procesos del núcleo 
+(run queue) más los bloqueados por E/S (I/O blocked). Verdadero (lo que no tiene en cuenta son los procesos durmientes
+ (interruptible sleep). La run queue ya incluye a los procesos que se están ejecutando (running) 
+(ver transparencia 17 del tema2).
+
+La demanda de servicio de un dispositivo es el tiempo medio que dedica el dispositivo en servir cada trabajo que realiza. Falso. La demanda de servicio de un dispositivo es el tiempo medio que está el dispositivo ocupado por cada trabajo que realiza EL SERVIDOR (Di=Bi/C0).
+
+Qi=X0*Wi. Falso. En todo caso, Qi=Xi*Wi (ley de Little aplicada a la cola de la estación de servicio cuando el dispositivo no está saturado).
+
+Xi=Vi*X0. Verdadero (ley del Flujo Forzado).
+
+R0=R1+R2+...+Rk. Falso. La correcta sería: R0=V1*R1+V2*R2+ ... +Vk*Rk.
+
+7.-
+El razonamiento es idéntico al de la transparencia 67 de clase solo que partiendo de Wi=(Ni-1)*Si+Si/2 en lugar de Wi=Ni*Si.
+Ri=Wi+Si=(Ni-1)*Si+Si/2+Si = Ni*Si+Si/2
+Aplicando ley de Little (sist. no saturado) (Ni=Xi*Ri) tenemos:
+Ri= Xi*Ri*Si+Si/2
+Despejamos Ri:
+Ri*(1-Xi*Si)=Si/2 —> Ri=(Si/2)/(1-Xi*Si) = (Si/2)/(1-Ui)
+donde hemos usado la ley de la Utilización: Ui=Xi*Si
+
+8.-
+Nos dan: (llamo “d” al dispositivo del disco).
+T=24h = 24*60*60s = 86400s
+Sd=0,5s
+X0=25tr/min
+Rd=2,7s
+Ud=0,85
+Nos piden Ad = Cd (al no estar saturado).
+
+Hay muchas formas de resolverlo. La más sencilla:
+Sd = Bd/Cd = (Ud*T)/Cd  
+(donde he usado la definición de Sd y que Ud=Bd/T)
+Ahora, despejo Cd:
+Cd = (Ud*T)/Sd = 0,85*86400s/0,5s = 146880 accesos.
+
+9.-
+Claramente se dice que es una red de colas abierta. Poner algo relacionado con redes de colas cerradas (p.ej. el tiempo de reflexión) o no poner que X0=lambda0 si el sistema no está saturado (poner una curva en lugar de una recta en la gráfica) se considera un fallo muy grave ya que son conceptos que se consideran fundamentales en el tema 4.
+
+a)
+                S(ms)   V       D (s)
+discoA          10      4       0,04
+discoB          40      8       0,32
+CPU             3       13      0,04
+Calculamos la demanda de servicio de cada dispositivo. El cuello de botella es el discoB. Por tanto:
+lambda0_max = X0_max=1/DdiscoB = 3,125tr/s
+R0min = 0,04+0,32+0,04 = 0,4s
+
+Gráfica X0 frente a lambda0
+Debe ser la función identidad (X0=lambda0) hasta que el dispositivo se satura cuando lambda0 alcanza los 3,125 tr/s. Ver transparencia 48.
+
+Gráfica R0 frente a lambda0
+Cuando lambda0 tiende a 0, R0 debe tender a R0min = 0,4s
+Cuando lambda0 se acerca a los 3,125 tr/s, R0 debe tender a infinito (saturación). Entre un valor y otro hay que dibujar una curva como la de la transparencia 48.
+
+b)
+Reemplazamos el discoB por otro disco el doble de rápido, es decir, con un tiempo de servicio que es la mitad del tiempo de servicio actual.
+
+                S(ms)   V       D (s)
+discoA          10      4       0,04
+discoB’         20      8       0,16
+CPU             3       13      0,04
+Calculamos la demanda de servicio de cada dispositivo. El cuello de botella es el discoB’. Por tanto:
+lambda0_max = X0_max=1/DdiscoB’ = 6,25tr/s
+R0min = 0,04+0,16+0,04 = 0,24s
+
+Gráfica X0 frente a lambda0
+Debe ser la función identidad (X0=lambda0) hasta que el dispositivo se satura cuando lambda0 alcanza los 6,25 tr/s.
+
+Gráfica R0 frente a lambda0
+Cuando lambda0 tiende a 0, R0 debe tender a R0min = 0,24s
+Cuando lambda0 se acerca a los 6,25 tr/s, R0 debe tender a infinito (saturación). El aspecto final de las dos gráficas de R0 superpuestas debe ser parecido al de la transparencia 60.
+
+c)
+En este caso, el planteamiento es idéntico al que hicimos en el ejercicio 4.19b en clase:
+
+                S(ms)   V’      
+discoA          10      Va’     
+discoB          40      Vb’     
+CPU             3       13      
+
+Va’+Vb’ = 12 (cada trabajo que llega al servidor de media sigue teniendo que hacer 12 accesos al subsistema de discos).
+10*Va’=40*Vb’ (equilibramos las demandas de servicio).
+
+Solución:
+Va’=9,6
+Vb’=2,4
+Hay que hacer notar que las razones de visita son valores medios y pueden ser perfectamente valores no enteros.
+
+Por tanto, la nueva situación es:
+                S(ms)   V       D (s)
+discoA          10      9,6     0,096
+discoB          40      2,4     0,096
+CPU             3       13      0,04
+
+Con el mismo razonamiento que antes (ahora tanto el discoA como el discoB son cuellos de botella)
+lambda0_max = X0_max=1/DdiscoB = 10,42tr/s
+R0min = 0,096+0,096+0,04 = 0,23s
+
+10.-
+
+a) Mean = -1,2. Como estamos restando GE-WR, el valor medio de WR es 1,2Gbps mayor que el de GE. Como es un ancho de banda (=productividad), cuanto mayor sea su valor, mejor, por lo que la técnica White Rabbit (WR) parece ser mejor.
+
+b)
+Al 90% de confianza, el intervalo de confianza para GE-WR siempre refleja valores negativos (en particular, no incluye el 0) por lo que WR>GE. Por tanto, la técnica White Rabbit es significativamente mejor que Gigabit Ethernet para el 90% de confianza. A esa misma conclusión podríamos llegar viendo el valor-p = 0.028. Este valor me indica la probabilidad de que ambas técnicas sean equivalentes. Al ser esa probabilidad menor que 0.1 (que es el grado de significatividad asociado al nivel de confianza 90%) concluimos que las diferencias son significativas por lo que nos quedamos con el de mayor productividad: en nuestro caso WR ya que el valor medio de GE-WR es negativo (-1.2Gbps).
+
+Al 99% (alfa = 0,01) ya no podríamos descartar la hipótesis de que ambas técnicas presenten rendimientos equivalentes ya que el p-valor > alfa en ese caso (0,028>0,01).
+
+11.-
+Es el valor de NT (el número total de usuarios en una red de colas cerrada) en el que las asíntotas de baja carga y de alta carga en las gráficas de R0 frente a NT (o de X0 frente a NT) en una red de colas CERRADA coinciden. Decir que es el punto en el que se satura la red de colas se considera un fallo conceptual grave ya que una red de colas cerrada no se satura nunca (mientras que las  colas tengan suficiente tamaño). Igualmente, si no se hace mención explícita a una red de colas cerrada se considera que la respuesta es incorrecta.
+
+Las propiedades son las que se indican en la transparencia 53.
+
+Para su cálculo precisamente habría que encontrar la expresión de las asíntotas de baja y alta carga y ver cuándo se cortan. Para la de baja carga basta saber que R0 tiende a D y X0 se puede calcular a partir de la Ley del Tiempo de Respuesta Interactivo. Para la de alta carga basta saber que X0 tiende a 1/Db y R0 se puede calcular a partir de la Ley del Tiempo de Respuesta Interactivo. Nótese que no se pide la fórmula, solo el procedimiento que habría que seguir para obtenerla (transparencias 50 y 51).

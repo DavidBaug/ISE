@@ -1,0 +1,22 @@
+\select@language {spanish}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Proceso de instalaci\IeC {\'o}n de Phoronix\relax }}{4}{figure.caption.3}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Visualizaci\IeC {\'o}n del comando buscado.\relax }}{4}{figure.caption.4}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Lista de benchmarks disponibles\relax }}{5}{figure.caption.5}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Instalacion del benchmark hdparm-read\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Ejecuci\IeC {\'o}n del benchmark hdparm-read\relax }}{6}{figure.caption.7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Resumen de nuestro sistema y confirmaci\IeC {\'o}n de guardado de datos.\relax }}{7}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Realizaci\IeC {\'o}n de los test de disco.\relax }}{7}{figure.caption.9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Resultado del benchmark hdparm-read.\relax }}{8}{figure.caption.10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Resultado del benchmark hdparm-read en gr\IeC {\'a}fica.\relax }}{8}{figure.caption.11}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Ejecuci\IeC {\'o}n y resultado de Apache Benchmark a un servidor Ubuntu Server x86.\relax }}{9}{figure.caption.12}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ejecuci\IeC {\'o}n y resultado de Apache Benchmark a un servidor CentOS x64.\relax }}{10}{figure.caption.13}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Ejecuci\IeC {\'o}n y resultado de Apache Benchmark a un servidor Windows Server 2008 R2.\relax }}{11}{figure.caption.14}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Ejecuci\IeC {\'o}n de JMeter.\relax }}{13}{figure.caption.15}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Configurando grupo de Hilos JMeter.\relax }}{14}{figure.caption.16}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Configurando peticiones HTTP en JMeter.\relax }}{15}{figure.caption.17}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Configurando ruta de acceso de las peticiones.\relax }}{16}{figure.caption.18}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Configurando gr\IeC {\'a}fica de resultados JMeter.\relax }}{17}{figure.caption.19}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Resultados obtenidos en modo gr\IeC {\'a}fica.\relax }}{18}{figure.caption.20}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Pantalla inicial de SisoftSandra.\relax }}{19}{figure.caption.21}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Diversos test de SisoftSandra.\relax }}{19}{figure.caption.22}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Resultado de testear la CPU con SiSoftSandra.\relax }}{20}{figure.caption.23}

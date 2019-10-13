@@ -1,0 +1,9 @@
+\BOOKMARK [1][-]{section.1}{Instale la aplicaci\363n Phoronix. \277Qu\351 comando permite listar los benchmarks disponibles?}{}% 1
+\BOOKMARK [1][-]{section.2}{Seleccione, instale y ejecute uno, comente los resultados.}{}% 2
+\BOOKMARK [1][-]{section.3}{En Apache Benchmark, de los par\341metros que le podemos pasar al comando \277Qu\351 significa -c 30 ? \277y -n 1000?}{}% 3
+\BOOKMARK [1][-]{section.4}{Ejecute ab contra a las tres m\341quinas virtuales \(desde el SO anfitri\363n a las m\341quina virtuales de la red local\) una a una \(arrancadas por separado\) y muestre las estad\355sticas. \277Cu\341l es la que proporciona mejores resultados? F\355jese en el n\372mero de bytes transferidos, \277es igual para cada m\341quina?}{}% 4
+\BOOKMARK [1][-]{section.5}{\277Qu\351 es Scala? Instale Gatling y pruebe los escenarios por defecto. c02o}{}% 5
+\BOOKMARK [1][-]{section.6}{Lea el art\355culo sobre Jmeter y elabore un breve resumen.}{}% 6
+\BOOKMARK [1][-]{section.7}{Instale y siga el tutorial en http://jmeter.apache.org/usermanual/build-web-test-plan.html realizando capturas de pantalla y coment\341ndolas. En vez de usar la web de jmeter, haga el experimento usando alguna de sus m\341quinas virtuales\(Puede hacer una p\341gina sencilla, usar las p\341ginas de phpmyadmin, instalar un CMS, etc.\).}{}% 7
+\BOOKMARK [1][-]{section.8}{Seleccione un benchmark entre SisoftSandra y Aida. Ejec\372telo y muestre capturas de pantalla comentando los resultados.}{}% 8
+\BOOKMARK [1][-]{section.9}{Programe un benchmark usando el lenguaje que desee}{}% 9

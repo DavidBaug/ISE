@@ -1,0 +1,78 @@
+\begin{thebibliography}{10}
+
+\bibitem{01p11}
+Oracle.
+\newblock
+  \url{http://docs.oracle.com/cd/E27300_01/E27309/html/vmusg-vm-modes.html}.
+
+\bibitem{02p12}
+VMWare.
+\newblock \url{http://www.vmware.com/es/virtualization}.
+
+\bibitem{02p13}
+FundacionMadridID.
+\newblock
+  \url{http://www.madrimasd.org/informacionidi/biblioteca/publicacion/doc/VT/VT19\_green\_IT\_tecnologias\_eficiencia\_energetica\_sistemas\_TI.pdf}.
+
+\bibitem{03p21}
+Evidalia.
+\newblock \url{http://www.evidaliahost.com/}.
+
+\bibitem{03p22}
+Dinahosting.
+\newblock \url{https://dinahosting.com/}.
+
+\bibitem{03p23}
+Hostinger.
+\newblock \url{http://www.hostinger.es/}.
+
+\bibitem{03p24}
+Arsys.
+\newblock \url{http://www.arsys.es/}.
+
+\bibitem{04p31}
+Wikipedia.
+\newblock \url{http://es.wikipedia.org/wiki/Virtualización}.
+
+\bibitem{05p41}
+Microsoft.
+\newblock
+  \url{http://download.microsoft.com/download/3/F/2/3F24A601-D7B1-4F68-91C3-CFADB2CD419D/WS/2012/Feature/Comparison_Windows/Server/Versions.pdf}.
+
+\bibitem{06p51}
+Ubuntu.
+\newblock \url{http://www.ubuntu.com/}.
+
+\bibitem{06p52}
+Canonical.
+\newblock \url{http://www.canonical.com/}.
+
+\bibitem{07p61}
+RedHat.
+\newblock
+  \url{https://www.redhat.com/en/technologies/linux-platforms/articles/relationship-between-fedora-and-rhel}.
+
+\bibitem{08p71}
+Universidad-Cardenal-Herrera.
+\newblock
+  \url{http://blog.uchceu.es/informatica/ranking-de-sistemas-operativos-mas-usados-para-2014/}.
+
+\bibitem{09p81}
+DLink.
+\newblock \url{http://www.dlink.com/-/media/Files/B2B/Briefs/ES/dlinkraid.pdf}.
+
+\bibitem{10p91}
+LDP.
+\newblock \url{http://www.tldp.org/HOWTO/LVM-HOWTO/whatislvm.html}.
+
+\bibitem{11p111}
+WikyKernel.
+\newblock
+  \url{https://ext4.wiki.kernel.org/index.php/Frequently\_Asked\_Questions\#What\_is\_the\_difference\_between\_ext2.2C\_ext3.2C\_and\_ext4.3F}.
+
+\bibitem{12p141}
+Microsoft.
+\newblock
+  \url{http://download.microsoft.com/download/7/0/4/7044A329-B9D6-43C4-BCEE-91C078A5FD52/whats\_new\_windows\_server\_2012\_esp\_.docx}.
+
+\end{thebibliography}

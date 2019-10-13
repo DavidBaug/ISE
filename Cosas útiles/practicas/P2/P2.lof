@@ -1,0 +1,33 @@
+\select@language {spanish}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Error que da al lanzar una aplicacion grafica sin -x o con restricciones en el host\relax }}{7}{figure.caption.3}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Aplicacion GEdit lanzada desde ssh sin -X pero exportando DISPLAY\relax }}{8}{figure.caption.4}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Dependencias faltantes para instalar rpm de terminator\relax }}{9}{figure.caption.5}
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Uso del comando screen\relax }}{10}{figure.caption.6}
+\contentsline {figure}{\numberline {12.1}{\ignorespaces Instalaci\IeC {\'o}n completada de fail2ban\relax }}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {12.2}{\ignorespaces Servicio fail2ban funcionando\relax }}{11}{figure.caption.8}
+\contentsline {figure}{\numberline {13.1}{\ignorespaces Menu seleccci\IeC {\'o}n de TaskSel\relax }}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {13.2}{\ignorespaces Httpd instalado con yum\relax }}{13}{figure.caption.10}
+\contentsline {figure}{\numberline {13.3}{\ignorespaces Servicio httpd iniciado y comprobado\relax }}{13}{figure.caption.11}
+\contentsline {figure}{\numberline {13.4}{\ignorespaces MariaDB instalada\relax }}{14}{figure.caption.12}
+\contentsline {figure}{\numberline {15.1}{\ignorespaces Servidor web funcionando en CentOS\relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {16.1}{\ignorespaces Instalaci\IeC {\'o}n de Java completada\relax }}{15}{figure.caption.14}
+\contentsline {figure}{\numberline {16.2}{\ignorespaces Instalaci\IeC {\'o}n de TomCat completada\relax }}{15}{figure.caption.15}
+\contentsline {figure}{\numberline {16.3}{\ignorespaces Instalaci\IeC {\'o}n de TomCat probada\relax }}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {17.1}{\ignorespaces Instalaci\IeC {\'o}n de MongoDB completada\relax }}{16}{figure.caption.17}
+\contentsline {figure}{\numberline {17.2}{\ignorespaces Proceso de creaci\IeC {\'o}n y consulta de la colecci\IeC {\'o}n de datos\relax }}{16}{figure.caption.18}
+\contentsline {figure}{\numberline {19.1}{\ignorespaces Webmin instalado\relax }}{17}{figure.caption.19}
+\contentsline {figure}{\numberline {19.2}{\ignorespaces Panel principal de webmin\relax }}{17}{figure.caption.20}
+\contentsline {figure}{\numberline {20.1}{\ignorespaces Login en phpmyadmin\relax }}{18}{figure.caption.21}
+\contentsline {figure}{\numberline {20.2}{\ignorespaces Variable que controla el tama\IeC {\~n}o maximo de fichero para php\relax }}{19}{figure.caption.22}
+\contentsline {figure}{\numberline {21.1}{\ignorespaces Tipos de demo en DirectAdmin\relax }}{20}{figure.caption.23}
+\contentsline {figure}{\numberline {21.2}{\ignorespaces Login demo de Administrador\relax }}{21}{figure.caption.24}
+\contentsline {figure}{\numberline {21.3}{\ignorespaces Gestor de ficheros en DirectAdmin\relax }}{21}{figure.caption.25}
+\contentsline {figure}{\numberline {21.4}{\ignorespaces Gestor de copias de seguridad en DirectAdmin\relax }}{22}{figure.caption.26}
+\contentsline {figure}{\numberline {21.5}{\ignorespaces Gestor de Estad\IeC {\'\i }sticas en DirectAdmin\relax }}{23}{figure.caption.27}
+\contentsline {figure}{\numberline {22.1}{\ignorespaces Script bash para el cambio de puerto ssh\relax }}{24}{figure.caption.28}
+\contentsline {figure}{\numberline {24.1}{\ignorespaces Script PHP para el cambio de puerto ssh pasado v\IeC {\'\i }a WEB en modo GET o POST\relax }}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {25.1}{\ignorespaces Instalacion de PowerShell\relax }}{26}{figure.caption.30}
+\contentsline {figure}{\numberline {25.2}{\ignorespaces Consola PowerShell iniciada\relax }}{27}{figure.caption.31}
+\contentsline {figure}{\numberline {25.3}{\ignorespaces Listado de todos los procesos con PowerShell\relax }}{28}{figure.caption.32}
+\contentsline {figure}{\numberline {25.4}{\ignorespaces Listado con filtro de procesos con PowerShell\relax }}{29}{figure.caption.33}
+\contentsline {figure}{\numberline {25.5}{\ignorespaces Comprobaci\IeC {\'o}n de la eliminaci\IeC {\'o}n del proceso calc\relax }}{29}{figure.caption.34}
